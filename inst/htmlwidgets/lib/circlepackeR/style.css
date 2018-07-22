@@ -4,6 +4,7 @@
 
 .circlepackeR .node:hover {
   stroke: white;
+  stroke-opacity: 0.5;
   stroke-width: 3px;
 }
 
