@@ -3,16 +3,16 @@
 }
 
 .circlepackeR .node:hover {
-  stroke: white;
+  stroke: #a7e7f1;
   stroke-width: 3px;
 }
 
 .circlepackeR .node--leaf {
-  fill: #d6e6ef;
+  fill: #e5f8fb;
 }
 
 .circlepackeR .label {
-  font: 7px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-anchor: middle;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
