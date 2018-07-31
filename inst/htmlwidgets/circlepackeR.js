@@ -82,7 +82,7 @@ HTMLWidgets.widget({
 
         transition.selectAll("text")
           .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
-            .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+            .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0.2; })
             .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
             .each("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
       }
