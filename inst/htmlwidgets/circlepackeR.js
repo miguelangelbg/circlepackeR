@@ -59,8 +59,6 @@ HTMLWidgets.widget({
         .enter().append("text")
           .attr("class", "label")
           .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0.2; })
-          .style("display", function(d) { return d.parent === root ? null : "none"; })
-          .style("fill", function(d) {return d.parent === root ? "#212121" : null})
           .text(function(d) { return d.name; });
 
       var node = svg.selectAll("circle,text");
