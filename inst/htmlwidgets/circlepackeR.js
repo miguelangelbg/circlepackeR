@@ -81,10 +81,30 @@ HTMLWidgets.widget({
             });
 
         transition.selectAll("text")
-          .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
-            .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
-            .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
-            .each("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+          .filter(function(d) {
+              if(!(d === undefined))
+              {
+                return d.parent === focus || this.style.display === "inline";
+              }
+            })
+            .style("fill-opacity", function(d) {
+              if(!(d === undefined))
+              {
+                return d.parent === focus ? 1 : 0;
+              }
+             })
+            .each("start", function(d) {
+              if(!(d === undefined))
+              {
+                if (d.parent === focus) this.style.display = "inline";
+              }
+            })
+            .each("end", function(d) {
+              if(!(d === undefined))
+              {
+                if (d.parent !== focus) this.style.display = "none";
+              }
+            });
       }
 
       function zoomTo(v) {
