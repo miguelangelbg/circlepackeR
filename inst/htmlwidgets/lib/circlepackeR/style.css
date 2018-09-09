@@ -8,13 +8,13 @@
 }
 
 .circlepackeR .node--leaf {
-  fill: #e5f8fb;
+  fill: #0c5e8d;
 }
 
 .circlepackeR .label {
-  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 12px "Lato",sans-serif, Arial, sans-serif;
   font-weight: bold;
-  fill: #3b3b3b;
+  fill: #ededed;
   text-anchor: middle;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
