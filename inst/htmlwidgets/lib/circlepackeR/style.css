@@ -3,8 +3,8 @@
 }
 
 .circlepackeR .node:hover {
-  stroke: #95e3ee;
-  stroke-width: 3px;
+  stroke: #00b8df;
+  stroke-width: 4px;
 }
 
 .circlepackeR .node--leaf {
