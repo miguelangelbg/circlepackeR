@@ -116,7 +116,7 @@ HTMLWidgets.widget({
 
     createViz(x.data)
 
-    d3.select(self.frameElement).style("height", diameter + "px");
+    d3.select(window.frameElement).style("height", diameter + "px");
 
   },
 
